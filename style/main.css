@@ -50,7 +50,7 @@ header nav a:hover{
     font-size:16px;
     /* Referenciar imagem -> propriedade url()
     linear-gradient -> dar um "gradiente" na imagem*/
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa_soa2.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa_soa2.jpg');
 
     height: 400px;
     /* Especificar o tamanho da imagem */
@@ -79,7 +79,7 @@ header nav a:hover{
 
 .filme-principal .titulo{
     margin-top: 15%;
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
@@ -92,7 +92,8 @@ header nav a:hover{
     /* Padding -> elemento interno */
     padding: 15px 30px;
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 18px;
+    border-radius: 5px;
 
     /* Mudar cursor -> dizer que é um botão*/
     cursor: pointer;
@@ -101,7 +102,7 @@ header nav a:hover{
 }
 
 .botao:hover{
-    background-color:white;
+    background-color:rgba(212, 212, 212, 0.986);
     color:black;
 }
 
@@ -116,5 +117,10 @@ header nav a:hover{
 }
 
 .carrosel-filmes{
+    cursor: pointer;
     margin-top: 5px;
+}
+
+.carrosel:hover{
+    color: #fff;   
 }
