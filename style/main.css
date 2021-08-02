@@ -1,0 +1,120 @@
+/* Variável -> Cores principais do site */
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/* RESET -> deixar como "padrão" */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos cásicos*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    /* Utilizar flex-box -> alinhar elementos em tela*/
+    display: flex; /* Joga tudo como linha*/
+    flex-direction: row; /* Propriedade default -> + p/ caráter semântico */
+    align-items: center; /* Deixar mais alinhado */
+    justify-content: space-between; /* Espaço entre tag h2 e <nav> */
+}
+
+header .logo{
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+/* Evento quando passar o mouse em cima */
+header nav a:hover{
+    color: #fff;
+}
+
+/* Filme principal*/
+.filme-principal{
+    font-size:16px;
+    /* Referenciar imagem -> propriedade url()
+    linear-gradient -> dar um "gradiente" na imagem*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa_soa2.jpg');
+
+    height: 400px;
+    /* Especificar o tamanho da imagem */
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    /* Os dois abaixos se invertem dependendo da direção do flex-direction | 
+    justify-content segue direção do flex-direction*/
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.filme-principal .descricao{   
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* Font Awesome*/
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border:none;
+    color: white;
+
+    /* Padding -> elemento interno */
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    /* Mudar cursor -> dizer que é um botão*/
+    cursor: pointer;
+    /* Cuida de transição entre animações*/
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
